@@ -53,7 +53,7 @@ function App() {
     })
 
     try {
-      const response = await fetch(`${process.env.REACT_APP_API_URL || 'http://localhost:7778'}/api/calculate`, {
+      const response = await fetch(`${process.env.REACT_APP_API_URL || ''}/api/calculate`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -199,7 +199,7 @@ function App() {
     setChatResponse('')
 
     try {
-      const response = await fetch(`${process.env.REACT_APP_API_URL || 'http://localhost:7778'}/api/chat`, {
+      const response = await fetch(`${process.env.REACT_APP_API_URL || ''}/api/chat`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
