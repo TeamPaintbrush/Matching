@@ -8,9 +8,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint .",
-    "port:kill-all": "powershell -Command \"Get-Process -Id (Get-NetTCPConnection -LocalPort 3000,3001,3002,5173,8080,8888,7778 -ErrorAction SilentlyContinue | Select-Object -ExpandProperty OwningProcess | Sort-Object -Unique) -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue\"",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "port:kill-all": "powershell -Command \"Get-Process -Id (Get-NetTCPConnection -LocalPort 3000,3001,3002,5173,8080,8888,7778 -ErrorAction SilentlyContinue | Select-Object -ExpandProperty OwningProcess | Sort-Object -Unique) -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue\""
   },
   "dependencies": {
     "react": "^19.1.0",
@@ -42,5 +40,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://teampaintbrush.github.io/Matching/"
+  "homepage": "https://romantic-brown.74-208-217-142.plesk.page/"
 }
